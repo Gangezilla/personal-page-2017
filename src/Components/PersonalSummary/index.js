@@ -5,7 +5,7 @@ import DogLoverImage from './doglover.jpg';
 const PersonalSummaryContainer = glamorous.div({
   display: 'flex',
   maxWidth: '1400px',
-  margin: '30px auto',
+  margin: '50px auto',
   justifyContent: 'space-around',
 });
 
@@ -29,10 +29,16 @@ const HeyThere = glamorous.h2({
   fontFamily: 'Oxygen',
 });
 
-const P = glamorous.h2({
+const P = glamorous.p({
   fontFamily: 'Source Sans Pro',
   fontWeight: 300,
   fontSize: '20px',
+});
+
+const Resume = glamorous.a({
+  padding: '15px 30px',
+  color: '#22BBB5',
+  border: '1px solid #22BBB5',
 });
 
 const PersonalSummary = () => (
@@ -53,7 +59,7 @@ const PersonalSummary = () => (
         You can check out some of the things I&apos;ve done below, or if you want a quick resume summary,
         you can grab that right here.
       </P>
-      <a> Resume </a>
+      <Resume> Resume </Resume>
     </InnerPersonalSummary>
   </PersonalSummaryContainer>
 );
