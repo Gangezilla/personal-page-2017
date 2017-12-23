@@ -50,8 +50,10 @@ class App extends React.Component {
       <div className="App">
         <Header />
         <PersonalSummary />
-        <Work data={this.state.work} />
-        <Education data={this.state.education} />
+        <div>
+          <Work data={this.state.work} />
+          <Education data={this.state.education} />
+        </div>
         <Projects data={this.state.projects} />
         <Footer />
       </div>

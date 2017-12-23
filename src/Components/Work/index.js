@@ -2,23 +2,27 @@ import React from 'react';
 import Collapsible from 'react-collapsible';
 import glamorous from 'glamorous';
 
+import '../collapsible.css';
+
 const CollapsibleContainer = glamorous.div({
 
 });
 
-
 const renderWorkData = data =>
   data.map(work =>
-    (<Collapsible trigger={work.companyName}>
+    (<Collapsible
+      trigger={work.companyName}
+      key={work.companyName}
+    >
       <p>{work.role}</p>
       <ul>
         {work.responsibilities.map(resp => (
-          <li>{resp}</li>
+          <li key={resp}>{resp}</li>
         ))}
       </ul>
       <ul>
         {work.achievements.map(achievement => (
-          <li>{achievement}</li>
+          <li key={achievement}>{achievement}</li>
         ))}
       </ul>
       <p>{work.timePeriod}</p>
@@ -29,7 +33,6 @@ const Work = props => [
   <CollapsibleContainer>
     <Collapsible trigger="Work" open>
       {renderWorkData(test)}
-
     </Collapsible>
   </CollapsibleContainer>,
 ];
