@@ -3,7 +3,7 @@
 
 .Collapsible__contentInner {
   padding: 10px;
-  border: 1px solid #EEEEEE;
+  background: white;
   border-top: 0; }
   .Collapsible__contentInner p {
     margin-bottom: 10px;
@@ -17,19 +17,9 @@
   font-weight: 400;
   text-decoration: none;
   position: relative;
-  border: 1px solid white;
   padding: 10px;
-  color: white; }
-
-.CustomTriggerCSS {
-  background-color: lightcoral;
-  transition: background-color 200ms ease; }
-
-.CustomTriggerCSS--open {
-  background-color: darkslateblue; }
-
-.Collapsible__custom-sibling {
-  padding: 5px;
-  font-size: 12px;
-  background-color: #CBB700;
+  background-color: #22BBB5;
   color: black; }
+  .Collapsible__trigger.is-disabled {
+    opacity: 0.5;
+    background-color: grey; }

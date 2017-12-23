@@ -31,7 +31,7 @@ const renderWorkData = data =>
 
 const Work = props => [
   <CollapsibleContainer>
-    <Collapsible trigger="Work" open>
+    <Collapsible trigger="Work">
       {renderWorkData(test)}
     </Collapsible>
   </CollapsibleContainer>,

@@ -12,6 +12,7 @@ const renderProjectData = data =>
       trigger={project.name}
       key={project.name}
     >
+      <p>{project.dateCreated}</p>
       <p>{project.description}</p>
       <p>{project.reflection}</p>
       <ul>
@@ -27,7 +28,7 @@ const renderProjectData = data =>
 
 const Projects = () => [
   <CollapsibleContainer>
-    <Collapsible trigger="Projects" open>
+    <Collapsible trigger="Projects">
       {renderProjectData(projects)}
     </Collapsible>
   </CollapsibleContainer>,
