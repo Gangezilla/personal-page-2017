@@ -9,14 +9,14 @@ import Footer from './Components/Footer';
 
 import './App.css';
 
-const WorkProjectsContainer = glamorous.div({
-  margin: '20px 0',
+const DataContainer = glamorous.div({
+  margin: '20px auto',
   display: 'flex',
-  maxWidth: '1024px',
-  justifyContent: 'space-around',
-  '@media(max-width: 480px)': {
-    flexDirection: 'column',
-  },
+  maxWidth: '800px',
+  justifyContent: 'space-between',
+  flexWrap: 'wrap',
+  flexDirection: 'column',
+  padding: '0 20px',
 });
 
 class App extends React.Component {
@@ -61,11 +61,11 @@ class App extends React.Component {
       <div className="App">
         <Header />
         <PersonalSummary />
-        <WorkProjectsContainer>
+        <DataContainer>
           <Work data={this.state.work} />
           <Projects data={this.state.projects} />
-        </WorkProjectsContainer>
-        <Education data={this.state.education} />
+          <Education data={this.state.education} />
+        </DataContainer>
         <Footer />
       </div>
     );

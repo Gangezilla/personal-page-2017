@@ -3,7 +3,11 @@ import Collapsible from 'react-collapsible';
 import glamorous from 'glamorous';
 
 const CollapsibleContainer = glamorous.div({
+  maxWidth: '800px',
+});
 
+const A = glamorous.a({
+  color: '#22BBB5',
 });
 
 const renderProjectData = data =>
@@ -21,7 +25,7 @@ const renderProjectData = data =>
         ))}
       </ul>
       {project.github && (
-        <a href={project.github}>Github</a>
+        <A href={project.github}>Github</A>
       )}
     </Collapsible>),
   );

@@ -22,7 +22,7 @@ const Header = () => (
     <SelfPromotionHeader>
       <InnerSelfPromotionHeader>
         <ScottGangemi>Scott Gangemi</ScottGangemi>
-        <Title>Maker of things, and breaker of things</Title>
+        <Title>Maker of things, breaker of things</Title>
       </InnerSelfPromotionHeader>
       <Logo />
     </SelfPromotionHeader>

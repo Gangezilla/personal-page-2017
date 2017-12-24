@@ -8,9 +8,17 @@
   .Collapsible__contentInner p {
     margin-bottom: 10px;
     font-size: 14px;
-    line-height: 20px; }
+    line-height: 20px;
+    font-family: 'Oxygen';
+    font-size: 16px; }
     .Collapsible__contentInner p:last-child {
       margin-bottom: 0; }
+  .Collapsible__contentInner ul {
+    text-align: left; }
+
+.Collapsible__contentOuter {
+  border: 1px solid #22BBB5;
+  margin-bottom: 10px; }
 
 .Collapsible__trigger {
   display: block;
@@ -19,7 +27,9 @@
   position: relative;
   padding: 10px;
   background-color: #22BBB5;
-  color: black; }
+  color: white;
+  font-family: 'Oxygen';
+  font-size: 18px; }
   .Collapsible__trigger.is-disabled {
     opacity: 0.5;
     background-color: grey; }

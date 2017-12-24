@@ -5,7 +5,7 @@ import glamorous from 'glamorous';
 import '../collapsible.css';
 
 const CollapsibleContainer = glamorous.div({
-
+  maxWidth: '800px',
 });
 
 const renderWorkData = data =>
@@ -14,18 +14,19 @@ const renderWorkData = data =>
       trigger={work.companyName}
       key={work.companyName}
     >
-      <p>{work.role}</p>
+      <p>{work.role}, {work.timePeriod}</p>
+      <p>Responsibilities</p>
       <ul>
         {work.responsibilities.map(resp => (
           <li key={resp}>{resp}</li>
         ))}
       </ul>
+      <p>Achievements</p>
       <ul>
         {work.achievements.map(achievement => (
           <li key={achievement}>{achievement}</li>
         ))}
       </ul>
-      <p>{work.timePeriod}</p>
     </Collapsible>),
   );
 

@@ -1,10 +1,8 @@
-// The main container element
 .Collapsible {
   background-color: #22BBB5;
 }
 
 
-//The content within the collaspable area
 .Collapsible__contentInner {
   padding: 10px;
   background: white;
@@ -14,14 +12,24 @@
     margin-bottom: 10px;
     font-size: 14px;
     line-height: 20px;
+    font-family: 'Oxygen';
+    font-size: 16px;
 
     &:last-child {
       margin-bottom: 0;
     }
   }
+
+  ul {
+    text-align: left;
+  }
 }
 
-//The link which when clicked opens the collapsable area
+.Collapsible__contentOuter {
+  border: 1px solid #22BBB5;
+  margin-bottom: 10px;
+}
+
 .Collapsible__trigger {
   display: block;
   font-weight: 400;
@@ -29,7 +37,9 @@
   position: relative;
   padding: 10px;
   background-color: #22BBB5;
-  color: black;
+  color: white;
+  font-family: 'Oxygen';
+  font-size: 18px;
 
   &.is-disabled {
     opacity: 0.5;

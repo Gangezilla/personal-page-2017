@@ -14,7 +14,8 @@ export const LinkContainer = glamorous.div({
   margin: '0 auto',
   '@media(max-width: 480px)': {
     flexDirection: 'column',
-    height: '150px',
+    height: '100px',
+    padding: '20px 0 0 0',
   },
 });
 
@@ -25,6 +26,7 @@ export const SelfPromotionHeader = glamorous.div({
   maxWidth: '800px',
   margin: '0 auto',
   '@media(max-width: 480px)': {
+    padding: '0 20px',
     flexDirection: 'column',
     alignItems: 'center',
   },
@@ -53,11 +55,17 @@ export const Logo = glamorous.div({
   backgroundPositionX: 'center',
   backgroundPositionY: 'center',
   backgroundSize: '150px',
+  '@media(max-width: 480px)': {
+    marginBottom: '10px',
+  },
 });
 
 export const ScottGangemi = glamorous.h1({
   fontFamily: 'Oxygen',
-  fontSize: '45px',
+  fontSize: '40px',
+  '@media(max-width: 480px)': {
+    textAlign: 'center',
+  },
 });
 
 export const Title = glamorous.h2({
