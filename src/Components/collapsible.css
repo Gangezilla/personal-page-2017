@@ -10,7 +10,8 @@
     font-size: 14px;
     line-height: 20px;
     font-family: 'Oxygen';
-    font-size: 16px; }
+    font-size: 16px;
+    text-align: left; }
     .Collapsible__contentInner p:last-child {
       margin-bottom: 0; }
   .Collapsible__contentInner ul {

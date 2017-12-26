@@ -1,5 +1,5 @@
 import glamorous from 'glamorous';
-import LogoSG from '../../Images/logo.png';
+import { Logo } from '../Common/components';
 
 export const HeaderContainer = glamorous.div({
   backgroundColor: '#22BBB5',
@@ -48,13 +48,7 @@ export const A = glamorous.a({
   },
 });
 
-export const Logo = glamorous.div({
-  background: `url(${LogoSG})`,
-  height: '150px',
-  width: '150px',
-  backgroundPositionX: 'center',
-  backgroundPositionY: 'center',
-  backgroundSize: '150px',
+export const HeaderLogo = glamorous(Logo)({
   '@media(max-width: 480px)': {
     marginBottom: '10px',
   },
@@ -71,8 +65,4 @@ export const ScottGangemi = glamorous.h1({
 export const Title = glamorous.h2({
   fontFamily: 'Source Sans Pro',
   fontSize: '24px',
-});
-
-export const PersonalDetail = glamorous.span({
-
 });

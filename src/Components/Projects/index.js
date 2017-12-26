@@ -1,10 +1,7 @@
 import React from 'react';
 import Collapsible from 'react-collapsible';
 import glamorous from 'glamorous';
-
-const CollapsibleContainer = glamorous.div({
-  maxWidth: '800px',
-});
+import { CollapsibleContainer } from '../Common/components';
 
 const A = glamorous.a({
   color: '#22BBB5',
@@ -15,6 +12,7 @@ const renderProjectData = data =>
     (<Collapsible
       trigger={project.name}
       key={project.name}
+      transitionTime={300}
     >
       <p>{project.dateCreated}</p>
       <p>{project.description}</p>
@@ -31,7 +29,7 @@ const renderProjectData = data =>
   );
 
 const Projects = () => [
-  <CollapsibleContainer>
+  <CollapsibleContainer transitionTime={300} key="CollapsibleContainer">
     <Collapsible trigger="Projects">
       {renderProjectData(projects)}
     </Collapsible>

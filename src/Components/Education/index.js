@@ -1,16 +1,13 @@
 import React from 'react';
 import Collapsible from 'react-collapsible';
-import glamorous from 'glamorous';
-
-const CollapsibleContainer = glamorous.div({
-  maxWidth: '800px',
-});
+import { CollapsibleContainer } from '../Common/components';
 
 const renderEducationData = data =>
   data.map(school =>
     (<Collapsible
       trigger={school.university}
       key={school.university}
+      transitionTime={300}
     >
       <p>{school.degree}, {school.major}, {school.timePeriod}</p>
       <ul>
@@ -22,7 +19,7 @@ const renderEducationData = data =>
   );
 
 const Education = () => [
-  <CollapsibleContainer>
+  <CollapsibleContainer transitionTime={300} key="CollapsibleContainer">
     <Collapsible trigger="Education">
       {renderEducationData(education)}
     </Collapsible>

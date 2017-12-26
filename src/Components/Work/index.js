@@ -1,18 +1,15 @@
 import React from 'react';
 import Collapsible from 'react-collapsible';
-import glamorous from 'glamorous';
+import { CollapsibleContainer } from '../Common/components';
 
 import '../collapsible.css';
-
-const CollapsibleContainer = glamorous.div({
-  maxWidth: '800px',
-});
 
 const renderWorkData = data =>
   data.map(work =>
     (<Collapsible
       trigger={work.companyName}
       key={work.companyName}
+      transitionTime={300}
     >
       <p>{work.role}, {work.timePeriod}</p>
       <p>Responsibilities</p>
@@ -31,7 +28,7 @@ const renderWorkData = data =>
   );
 
 const Work = props => [
-  <CollapsibleContainer>
+  <CollapsibleContainer transitionTime={300} key="CollapsibleContainer">
     <Collapsible trigger="Work">
       {renderWorkData(test)}
     </Collapsible>
