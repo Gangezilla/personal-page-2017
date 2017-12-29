@@ -8,6 +8,7 @@ import Projects from './Components/Projects';
 import Footer from './Components/Footer';
 
 import './App.css';
+import './collapsible.css';
 
 const DataContainer = glamorous.div({
   margin: '20px auto',
@@ -31,32 +32,35 @@ class App extends React.Component {
   }
 
   componentDidMount() {
-    this.fetchData();
+    const hostname = window && window.location && window.location.hostname;
+    console.log(hostname);
+    if (hostname !== 'localhost') {
+      this.fetchData();
+    }
   }
 
   fetchData() {
     const endpoints = ['/work/', '/education/', '/projects/'];
-    // Promise.all(endpoints.map((endpoint) => {
-    //   return new Promise((resolve, reject) => {
-    //     fetch(endpoint)
-    //       .then(res => res.json())
-    //       .then((json) => {
-    //         resolve(json);
-    //       })
-    //       .catch(err => reject(err));
-    //   });
-    // }))
-    //   .then((data) => {
-    //     this.setState({
-    //       work: data[0],
-    //       education: data[1],
-    //       projects: data[2],
-    //     });
-    //   });
+    Promise.all(endpoints.map((endpoint) => {
+      return new Promise((resolve, reject) => {
+        fetch(endpoint)
+          .then(res => res.json())
+          .then((json) => {
+            resolve(json);
+          })
+          .catch(err => reject(err));
+      });
+    }))
+      .then((data) => {
+        this.setState({
+          work: data[0],
+          education: data[1],
+          projects: data[2],
+        });
+      });
   }
 
   render() {
-    console.log(this.state);
     return (
       <div className="App">
         <Header />

@@ -17,6 +17,7 @@ export const PersonalSummaryContainer = glamorous.div({
 export const InnerPersonalSummary = glamorous.div({
   textAlign: 'left',
   maxWidth: '800px',
+  paddingRight: '20px',
 });
 
 export const DogLover = glamorous.div({
