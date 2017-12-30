@@ -30,6 +30,7 @@ export const DogLover = glamorous.div({
   backgroundSize: '350px',
   objectFit: 'none',
   objectPosition: '50% 50%',
+  borderRadius: '10px',
   '@media(max-width: 480px)': {
     height: '280px',
     width: '280px',

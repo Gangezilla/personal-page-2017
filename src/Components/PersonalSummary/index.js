@@ -20,8 +20,7 @@ const PersonalSummary = () => (
         and then want to experience again and again.
       </P>
       <P>
-        You can check out some of the things I&apos;ve done below, or if you want a quick resume summary,
-        you can grab that right here.
+        You can check out some of the things I&apos;ve done below, or if you want a quick resume summary, you can grab that right here. Just a warning, this resume isn&apos;t usually as up to date as the rest of this page here, but I do my best to update it when I can.
       </P>
       <Resume
         target="_blank"
