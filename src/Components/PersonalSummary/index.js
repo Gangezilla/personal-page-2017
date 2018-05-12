@@ -9,16 +9,12 @@ const PersonalSummary = () => (
   <PersonalSummaryContainer>
     <DogLover />
     <InnerPersonalSummary>
-      <HeyThere> Hey there, </HeyThere>
+      <HeyThere>Hey there,</HeyThere>
       <P>
-        I&apos;m Scott. I really like dogs, and I think this is the best photo of me that&apos;s ever going to be taken.
-        I&apos;m a front end (and aspiring full stack) developer whose currently working at Domain Group in Sydney, Australia. I&apos;m very interested in solving cool problems, teaching, and seeing the impact of awesome work. I do most of my work in React and Node; I really just love JS.
+        I'm Scott, and I'm a full stack developer working at Domain in Sydney, Australia. I've spent a lot of time building in React and Node at home and at work, but lately I've been working to branch away from purely Javascript and work on developing my skills in other languages. Specifically, this has meant some dabbling in C# and Python. Lately I've been learning more about different programming paradigms, OOP for example, and trying to learn more fundamentals through resources like Nand To Tetris. My next ideal role would be one where I have the opportunity to build servers in any language and write React applications on the front end.
       </P>
       <P>
-        I try and bring my design background to my development by trying to think like the people using my products, and working to create great products.
-      </P>
-      <P>
-        You can check out some of the things I&apos;ve done below, or if you want a quick resume summary, you can grab that right here. Just a warning, this resume isn&apos;t usually as up to date as the rest of this page, but I do my best to update it when I can.
+        You can check out some of the things I've worked on in my spare time below. I learn best by doing and building, so there's a number of projects in here. Some are better than others, but I can guarantee I learnt something by building them. But if you want something to print out and show off to your team (good idea!), my resume is right here.
       </P>
       <Resume
         target="_blank"

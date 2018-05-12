@@ -32,11 +32,7 @@ class App extends React.Component {
   }
 
   componentDidMount() {
-    const hostname = window && window.location && window.location.hostname;
-    console.log(hostname);
-    if (hostname !== 'localhost') {
-      this.fetchData();
-    }
+    this.fetchData();
   }
 
   fetchData() {

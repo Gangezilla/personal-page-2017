@@ -14,9 +14,11 @@ const renderProjectData = data =>
       key={project.name}
       transitionTime={300}
     >
-      <p>{project.dateCreated}</p>
+      <p>Time Period: {project.dateCreated}</p>
+      <p><strong>Description:</strong></p>
       <p>{project.description}</p>
-      <p>{project.reflection}</p>
+      <p><strong>Reflection:</strong></p>
+      <p dangeourslySetInnerHTML={project.reflection} />
       <ul>
         {project.techUsed.map(tech => (
           <li key={tech}>{tech}</li>
