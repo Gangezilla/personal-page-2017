@@ -18,7 +18,7 @@ const renderProjectData = data =>
       <p><strong>Description:</strong></p>
       <p>{project.description}</p>
       <p><strong>Reflection:</strong></p>
-      <p dangeourslySetInnerHTML={project.reflection} />
+      <p dangerouslySetInnerHTML={project.reflection} />
       <ul>
         {project.techUsed.map(tech => (
           <li key={tech}>{tech}</li>
