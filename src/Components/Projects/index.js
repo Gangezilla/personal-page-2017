@@ -7,6 +7,8 @@ const A = glamorous.a({
   color: '#22BBB5',
 });
 
+const createMarkup = content => ({ __html: content });
+
 const renderProjectData = data =>
   data.map(project =>
     (<Collapsible
@@ -18,7 +20,7 @@ const renderProjectData = data =>
       <p><strong>Description:</strong></p>
       <p>{project.description}</p>
       <p><strong>Reflection:</strong></p>
-      <p dangerouslySetInnerHTML={project.reflection} />
+      <p dangerouslySetInnerHTML={createMarkup(project.reflection)} />
       <ul>
         {project.techUsed.map(tech => (
           <li key={tech}>{tech}</li>

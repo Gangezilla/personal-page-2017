@@ -14,7 +14,7 @@ const PersonalSummary = () => (
         I'm Scott, and I'm a full stack developer working at Domain in Sydney, Australia. I've spent a lot of time building in React and Node at home and at work, but lately I've been working to branch away from purely Javascript and work on developing my skills in other languages. Specifically, this has meant some dabbling in C# and Python. Lately I've been learning more about different programming paradigms, OOP for example, and trying to learn more fundamentals through resources like Nand To Tetris. My next ideal role would be one where I have the opportunity to build servers in any language and write React applications on the front end.
       </P>
       <P>
-        You can check out some of the things I've worked on in my spare time below. I learn best by doing and building, so there's a number of projects in here. Some are better than others, but I can guarantee I learnt something by building them. But if you want something to print out and show off to your team (good idea!), my resume is right here.
+        You can check out some of the things I've worked on in my spare time below. I learn best by doing and building, which means I love building things. If you want something to print out and show off to your team (good idea!), my resume is right here.
       </P>
       <Resume
         target="_blank"
