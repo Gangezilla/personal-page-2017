@@ -27,7 +27,7 @@ const renderProjectData = data =>
         ))}
       </ul>
       {project.github && (
-        <A href={project.github}>Github</A>
+        <A target="_blank" href={project.github}>Github</A>
       )}
     </Collapsible>),
   );
