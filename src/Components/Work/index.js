@@ -2,6 +2,8 @@ import React from 'react';
 import Collapsible from 'react-collapsible';
 import { CollapsibleContainer } from '../Common/components';
 
+const createMarkup = content => ({ __html: content });
+
 const renderWorkData = data =>
   data.map(work =>
     (<Collapsible
@@ -21,7 +23,10 @@ const renderWorkData = data =>
       <p><strong>Achievements</strong></p>
       <ul>
         {work.achievements.map(achievement => (
-          <li key={achievement}>{achievement}</li>
+          <li
+            key={achievement}
+            dangerouslySetInnerHTML={createMarkup(achievement)}
+          />
         ))}
       </ul>
     </Collapsible>),
