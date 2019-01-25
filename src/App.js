@@ -53,6 +53,9 @@ class App extends React.Component {
           education: data[1],
           projects: data[2],
         });
+      })
+      .catch((err) => {
+        console.error(err);
       });
   }
 
